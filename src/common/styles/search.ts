@@ -5,12 +5,13 @@ export const SearchBox = styled.form`
   justify-content: center;
   width: 100%;
   position: relative;
+  margin-bottom: 2rem;
 `;
 
 export const SearchInput = styled.input`
   border: 0;
   padding: 2rem 4rem;
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${props => props.theme.boxColor};
   border-radius: 5rem;
   width: 50%;
   height: 5rem;
@@ -29,7 +30,7 @@ export const SearchBtn = styled.button`
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
-  background-color: ${props => props.theme.ownColor};
+  background-color: ${props => props.theme.btnColor};
   border: 0;
   cursor: pointer;
   color: white;
