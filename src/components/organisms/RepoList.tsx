@@ -12,7 +12,7 @@ function RepoList() {
       {repositoryList.length === 0 ? (
         <Title size={'1.5rem'}>검색결과가 없습니다.</Title>
       ) : (
-        repositoryList.map((v: RepoData, i: number) => <ListItem listData={v} />)
+        repositoryList.map((v: RepoData, i: number) => <ListItem key={i} listData={v} />)
       )}
     </>
   );

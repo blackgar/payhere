@@ -13,7 +13,7 @@ function RepositoryList() {
       setRepositoryList(data.items);
     }
   }, [data]);
-  console.log(repositoryList, data, loading);
+
   return (
     <>
       <RepositoryListTemplate getData={getData} loading={loading} />

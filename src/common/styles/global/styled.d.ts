@@ -2,8 +2,8 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    ownColor: string;
-    ownColorHover: string;
+    btnColor: string;
+    redBtnColor: string;
     bgColor: string;
     textColor: string;
     subTextColor: string;

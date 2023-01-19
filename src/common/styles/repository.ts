@@ -56,17 +56,30 @@ export const ListCreatedAt = styled.li`
 `;
 export const ListRegisterWrapper = styled.div`
   width: 5rem;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   text-align: center;
 `;
-export const ListRegisterBtn = styled.div`
+export const ListRegisterBtn = styled.button`
   border-radius: 0.5rem;
   border: 0;
-  background-color: ${props => props.theme.ownColor};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${props => props.theme.btnColor};
   width: 4rem;
   height: 2rem;
+  margin-bottom: 0.25rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: semi-bold;
+  cursor: pointer;
 `;
-export const ListDeleteBtn = styled.div``;
+export const ListRegisteredBtn = styled(ListRegisterBtn)`
+  background-color: green;
+`;
+export const ListDeleteBtn = styled(ListRegisterBtn)`
+  background-color: ${props => props.theme.redBtnColor};
+`;

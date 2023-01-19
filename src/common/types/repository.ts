@@ -3,6 +3,7 @@ export interface RepoData {
   full_name: string;
   description: string;
   stargazers_count: string;
+  id: number;
   owner: Owner;
 }
 export interface Owner {
@@ -11,4 +12,10 @@ export interface Owner {
 }
 export interface ListData {
   listData: RepoData;
+}
+
+export interface registeredRepoData {
+  id: number;
+  userName: string;
+  repoName: string;
 }

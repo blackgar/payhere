@@ -9,7 +9,7 @@ export const Container = styled.div<{ len: number }>`
   height: ${props => (props.len > 6 ? '100%' : '100vh')};
   padding-top: 5rem;
   padding-bottom: 10rem;
-  background-color: #95e1ff;
+  background-color: ${props => props.theme.bgColor};
 `;
 
 export const Title = styled.div<{ size: string }>`
