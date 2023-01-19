@@ -4,12 +4,12 @@
 
 ```
 git clone https://github.com/blackgar/payhere.git
-cd heuron
+cd payhere
 
-yarn install
-yarn start
-
-or
+env 파일을 만드신 후
+REACT_APP_API_URL=https://api.github.com/
+REACT_APP_ACCESS_TOKEN=깃헙토큰
+입력 후 실행해주시기 바랍니다.
 
 npm install
 npm start
@@ -34,7 +34,6 @@ npm start
 > ## 목차
 
 - [프로젝트 개요](#프로젝트-개요)
-- [폴더 구조](#폴더-구조)
 - [기능별 설명 / Best Practice](#기능별-설명--best-practice)
 - [깃/eslint/prettier](#Git)
 
@@ -70,23 +69,21 @@ npm start
 
 <br>
 
-> ## 폴더 구조
+> ## 구현 기능
 
-```
+### 1. Repository 검색 기능
 
-```
+### 2. Repository 리스트 구현
 
-> ## 기능별 설명 / Best Practice
+### 3. Repository 등록/삭제 구현
 
-### 1.
+### 4. 등록된 Repository의 Issue 리스트 구현
 
-### 2.
+> ## 미구현 기능
 
-### 3.
+### 1. Pagination 적용
 
-### 4. 공통
-
--
+### 2. 리팩토링(계획)
 
 > ## Git
 
@@ -96,6 +93,8 @@ npm start
   - Main : 최종 완성 코드 업로드 브랜치
   - front/dev : 기능이 완성되거나 리팩토링이 진행된 기능별 브랜치 병합 브랜치
   - front/feat/api : API 호출 기능 구현 브랜치
+  - front/feat/repository : repository 검색 및 등록/삭제 기능 구현 브랜치
+  - front/feat/issue : issue 관련 기능 구현 브랜치
 
   </details>
 
