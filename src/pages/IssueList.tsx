@@ -1,5 +1,7 @@
+import IssueListTemplate from '@template/IssueListTemplate';
+
 function IssueList() {
-  return <div></div>;
+  return <IssueListTemplate />;
 }
 
 export default IssueList;

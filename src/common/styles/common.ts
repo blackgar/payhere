@@ -16,4 +16,5 @@ export const Title = styled.div<{ size: string }>`
   font-size: ${props => props.size};
   font-weight: bold;
   color: ${props => props.theme.subTextColor};
+  margin-bottom: 2rem;
 `;

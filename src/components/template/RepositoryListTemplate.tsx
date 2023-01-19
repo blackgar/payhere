@@ -1,7 +1,7 @@
 import { GetRepositoryDataProps } from '@/types/props';
 import { repositoryListAtom } from '@atom';
 import SearchBar from '@molecules/SearchBar';
-import List from '@organisms/RepoList';
+import List from '@organisms/List';
 import { Container, Title } from '@styles/common';
 import { useRecoilValue } from 'recoil';
 

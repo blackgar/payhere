@@ -11,6 +11,8 @@ function RepositoryList() {
   useEffect(() => {
     if (data) {
       setRepositoryList(data.items);
+      // console.log(data.items);
+      // console.log(repositoryList);
     }
   }, [data]);
 

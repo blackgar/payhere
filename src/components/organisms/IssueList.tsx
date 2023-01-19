@@ -1,8 +1,5 @@
-import { issueListAtom } from '@atom';
-import { useRecoilValue } from 'recoil';
+import IssueListTemplate from '../template/IssueListTemplate';
 function IssueList() {
-  const issueList = useRecoilValue(issueListAtom);
-  console.log(issueList);
-  return <>IssueList</>;
+  return <IssueListTemplate />;
 }
 export default IssueList;
