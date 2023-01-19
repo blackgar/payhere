@@ -1,3 +1,4 @@
+import { IssueListData } from '@/types/issue';
 import { ListData, registeredRepoData, RepoData } from '@/types/repository';
 import { issueListAtom, registerRepoListAtom } from '@atom';
 import useMutation from '@hooks/useMutation';
@@ -23,7 +24,7 @@ import { useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 
 function ListItem({ listData }: ListData) {
-  const [repoName, userName] = listData.full_name.split('/');
+  const [userName, repoName] = listData.full_name.split('/');
   const [registerRepoList, setRegisterRepoList] = useRecoilState(registerRepoListAtom);
   const [issueList, setIssueList] = useRecoilState(issueListAtom);
   const [getIssueData, { data, loading }] = useMutation();
@@ -34,7 +35,8 @@ function ListItem({ listData }: ListData) {
     }
     if (!registerRepoList.includes(listData.id)) {
       setRegisterRepoList((prev: registeredRepoData[]) => [
-        { ...prev, id: listData.id, userName, repoName },
+        ...prev,
+        { id: listData.id, userName, repoName },
       ]);
       getIssueData(`repos/${userName}/${repoName}/issues`);
     }
@@ -43,6 +45,13 @@ function ListItem({ listData }: ListData) {
     const newData = registerRepoList.filter((v: registeredRepoData) => v.id !== listData.id);
     setRegisterRepoList(newData);
   };
+  useEffect(() => {
+    if (data) {
+      const tmp = [...issueList];
+      data.forEach((v: IssueListData) => tmp.push(v));
+      setIssueList(tmp);
+    }
+  }, [data]);
 
   return (
     <ListItemWrapper>
