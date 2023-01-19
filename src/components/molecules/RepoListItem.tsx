@@ -60,8 +60,7 @@ function RepoListItem({ listData }: ListData) {
       setIssueList(newData);
     }
   }, [data]);
-  // console.log(issueList);
-  // console.log(registerRepoList);
+
   return (
     <ListItemWrapper>
       <ListImgWrapper>

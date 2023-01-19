@@ -14,7 +14,6 @@ import {
 import { getDate } from '@utils/getDate';
 
 function IssueListItem({ listData }: ListItemData) {
-  console.log(listData);
   return (
     <ListItemWrapper style={{ cursor: 'pointer' }} onClick={() => window.open(listData.html_url)}>
       <ListImgWrapper>

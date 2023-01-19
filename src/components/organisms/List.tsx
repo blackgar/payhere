@@ -9,7 +9,6 @@ import IssueListItem from '@molecules/IssueListItem';
 
 function List() {
   const { pathname } = useLocation();
-  console.log(pathname);
   const repositoryList = useRecoilValue(repositoryListAtom);
   const issueList = useRecoilValue(issueListAtom);
   return (
