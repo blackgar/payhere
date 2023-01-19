@@ -5,6 +5,7 @@ export const SearchBox = styled.form`
   justify-content: center;
   width: 100%;
   position: relative;
+  margin-bottom: 2rem;
 `;
 
 export const SearchInput = styled.input`

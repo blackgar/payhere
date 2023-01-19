@@ -6,7 +6,9 @@ declare module 'styled-components' {
     ownColorHover: string;
     bgColor: string;
     textColor: string;
+    subTextColor: string;
     borderColor: string;
     boxColor: string;
+    subBoxColor: string;
   }
 }

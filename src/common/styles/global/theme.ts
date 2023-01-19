@@ -5,6 +5,8 @@ export const lightTheme: DefaultTheme = {
   ownColorHover: '#0086cc',
   bgColor: '#ffffff',
   textColor: '#000000',
+  subTextColor: '#666666',
   borderColor: '#eeeeee',
   boxColor: '#ffffff',
+  subBoxColor: '#eeeeee',
 };
