@@ -8,3 +8,15 @@ export const repositoryListAtom = atom({
   default: [],
   effects_UNSTABLE: [persistAtom],
 });
+
+export const registerRepoListAtom = atom({
+  key: 'register',
+  default: [],
+  effects_UNSTABLE: [persistAtom],
+});
+
+export const issueListAtom = atom({
+  key: 'issue',
+  default: [],
+  effects_UNSTABLE: [persistAtom],
+});

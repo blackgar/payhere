@@ -9,12 +9,8 @@ function RepositoryList() {
   const [getData, { data, loading }] = useMutation();
 
   useEffect(() => {
-    getData();
-  }, []);
-
-  useEffect(() => {
     if (data) {
-      setRepositoryList(data);
+      setRepositoryList(data.items);
     }
   }, [data]);
 
