@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <HeaderWrapper>
-      <Link to="/repositories">
+      <Link to="/">
         <HeaderTitle>검색</HeaderTitle>
       </Link>
       <Link to="/issues">

@@ -5,10 +5,10 @@ export interface RepoData {
   stargazers_count: string;
   id: number;
   owner: Owner;
+  html_url: string;
 }
 export interface Owner {
   avatar_url: string;
-  html_url: string;
 }
 export interface ListData {
   listData: RepoData;
@@ -16,6 +16,7 @@ export interface ListData {
 
 export interface registeredRepoData {
   id: number;
+  html_url: string;
   userName: string;
   repoName: string;
 }
